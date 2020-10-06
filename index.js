@@ -4,7 +4,10 @@ function largestSubarraySum(array) {
 
    array.forEach(value => {
      if (sum + value < 0) {
-       
+       sum = 0;
+    } else {
+
+    }
      }
    })
 };
