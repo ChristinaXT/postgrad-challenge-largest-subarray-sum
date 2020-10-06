@@ -6,8 +6,12 @@ function largestSubarraySum(array) {
      if (sum + value < 0) {
        sum = 0;
     } else {
+      sum += value
+      if (sum > max) {
+        max = sum
+      };
+    };
+  });
 
-    }
-     }
-   })
-};
+  return max;
+}
